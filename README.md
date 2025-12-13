@@ -35,8 +35,13 @@ DesiGold Honey is trusted by local families who value **authentic desi products*
 
 ## 📞 Contact & Orders
 
-* 📱 Phone / WhatsApp: **+91-XXXXXXXXXX**
-* 📍 Location: **India**
+* 📱 Phone / WhatsApp: **+91-8506919871
+* 📍 Location:Locality Name : Bagbhanpur ( बागभपुर )
+Block Name : Chhatoh
+District : Rae Bareli
+State : Uttar Pradesh
+Division : Lucknow
+Country : India 
 
 (Replace phone number with your real contact)
 
