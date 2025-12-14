@@ -4,128 +4,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DesiGold Honey | Pure Desi Honey from Beekeeping</title>
-  <meta name="description" content="DesiGold Honey – 100% pure, natural & unprocessed desi honey. Direct from traditional beekeeping. Trusted local honey brand from India." />
 
   <!-- SEO -->
+  <meta name="description" content="DesiGold Honey – 100% pure, natural & unprocessed desi honey. Direct from traditional beekeeping. Trusted local honey brand from India." />
   <meta name="keywords" content="pure desi honey, raw honey india, unprocessed honey, desigold honey, local honey rae bareli" />
 
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#faf6ef;color:#3b2a1a;line-height:1.6}
     a{text-decoration:none}
 
-    /* HEADER */
-    header{background:linear-gradient(135deg,#f6c56b,#e2a23a);padding:60px 20px;text-align:center}
-    header h1{font-size:48px;margin:0}
-    header p{font-size:20px;margin-top:10px}
+    /* HERO HEADER */
+    .hero-header{position:relative;min-height:85vh;background:linear-gradient(135deg,#f6c56b,#e3a23b);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+    .hero-overlay{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.25) 1px,transparent 1px);background-size:25px 25px;opacity:.4}
+    .hero-content{position:relative;max-width:900px;padding:20px}
+    .logo-badge{width:90px;height:90px;margin:auto;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 10px 25px rgba(0,0,0,.2);margin-bottom:20px}
+    .hero-header h1{font-size:48px;margin:0;font-weight:800}
+    .tagline{font-size:20px;margin-top:12px;font-weight:600}
+    .sub-text{font-size:17px;margin-top:15px;line-height:1.6}
+    .hero-buttons{margin-top:30px}
+    .btn-primary,.btn-whatsapp{display:inline-block;color:#fff;padding:14px 30px;border-radius:30px;font-weight:bold;margin:5px}
+    .btn-primary{background:#3b2a1a}
+    .btn-whatsapp{background:#25D366}
 
-    /* CONTAINER */
+    /* LAYOUT */
     .container{max-width:1100px;margin:auto;padding:40px 20px}
-
-    /* HERO */
-    .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-    .hero h2{font-size:34px;margin-bottom:15px}
-    .hero ul{padding-left:18px}
-
-    /* BUTTONS */
-    .btn{display:inline-block;background:#3b2a1a;color:#fff;padding:14px 30px;border-radius:30px;font-weight:bold}
-    .btn-whatsapp{background:#25D366;margin-left:10px}
-
-    /* PRODUCT */
-    .product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:flex-start}
+    .product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
     .price{font-size:28px;font-weight:bold}
+    select{padding:10px 15px;border-radius:8px}
 
-    select{padding:10px 15px;border-radius:8px;margin:10px 0}
-
-    /* FEATURES */
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
     .card{background:#fff;padding:25px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center}
     .card h3{color:#e2a23a}
 
-    /* FOOTER */
     footer{background:#3b2a1a;color:#fff;text-align:center;padding:30px;margin-top:60px}
 
     @media(max-width:768px){
-      .hero,.product{grid-template-columns:1fr}
-      header h1{font-size:34px}
+      .hero-header h1{font-size:34px}
+      .product{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
-  <h1>DesiGold Honey</h1>
-  <p>🍯 Pure Desi Honey | 100% Natural & Unprocessed</p>
+<!-- HERO HEADER -->
+<header class="hero-header">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="logo-badge">🍯</div>
+    <h1>DesiGold Honey</h1>
+    <p class="tagline">Pure Desi Honey • 100% Natural • Unprocessed</p>
+    <p class="sub-text">शुद्ध देसी शहद, सीधे पारंपरिक मधुमक्खी पालन से<br>बिना मिलावट • बिना प्रोसेसिंग</p>
+    <div class="hero-buttons">
+      <a href="tel:+918506919871" class="btn-primary">📞 Call to Order</a>
+      <a href="https://wa.me/918506919871?text=Hello%20I%20want%20to%20order%20DesiGold%20Honey" class="btn-whatsapp">💬 WhatsApp Order</a>
+    </div>
+  </div>
 </header>
 
-<!-- PRODUCT SECTION -->
+<!-- PRODUCT -->
 <section class="container">
   <div class="product">
-    <div>
-      <img src="https://images.unsplash.com/photo-1587049352847-6f3f8f8c6f5a?auto=format&fit=crop&w=800&q=80" alt="DesiGold Honey" style="width:100%;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.15);" onerror="this.src='https://via.placeholder.com/600x600?text=DesiGold+Honey'" />
-    </div>
+    <img src="https://images.unsplash.com/photo-1587049352847-6f3f8f8c6f5a?auto=format&fit=crop&w=800&q=80" alt="DesiGold Honey" style="width:100%;border-radius:18px">
     <div>
       <h2>Shudh Desi Honey 🍯</h2>
-      <p>100% Pure, Natural & Unprocessed Honey from Traditional Beekeeping</p>
-      <p class="price">₹499 <span style="font-size:16px;color:#777">(1000gm)</span></p>
-
-      <label><strong>Pack Size:</strong></label><br>
+      <p>100% Pure, Natural & Unprocessed Honey</p>
+      <p class="price">₹499 <span style="font-size:16px;color:#777">(1 Kg)</span></p>
       <select>
         <option>1000gm – ₹499</option>
         <option>500gm – ₹320</option>
         <option>250gm – ₹170</option>
         <option>100gm – ₹99</option>
       </select>
-
-      <div style="margin-top:15px">
-        <a href="https://wa.me/918506919871?text=I%20want%20to%20order%20DesiGold%20Honey" class="btn btn-whatsapp">💬 Buy on WhatsApp</a>
-        <a href="tel:+918506919871" class="btn">📞 Call to Order</a>
-      </div>
-
-      <ul style="margin-top:20px">
-        <li>✔ Free Expert Consultation</li>
-        <li>✔ Cash on Delivery Available</li>
-        <li>✔ Free Shipping on ₹500+</li>
-        <li>✔ Extra Discount on Prepaid Orders</li>
-      </ul>
     </div>
   </div>
 </section>
 
-<!-- DESCRIPTION -->
-<section class="container">
-  <h2>📄 Product Description</h2>
-  <p>DesiGold Shudh Honey is rich in natural enzymes, minerals, and antioxidants. It boosts immunity, improves digestion and is a healthy alternative to sugar.</p>
-
-  <h2>🌿 Key Benefits</h2>
-  <ul>
-    <li>Natural immunity booster</li>
-    <li>Helps in cough, cold & digestion</li>
-    <li>Improves energy & metabolism</li>
-    <li>100% chemical-free & raw</li>
-  </ul>
-
-  <h2>🥄 How to Use</h2>
-  <p>Consume 5–15g twice daily or as advised by experts.</p>
-</section>
-
-<!-- TRUST FEATURES -->
+<!-- FEATURES -->
 <section class="container">
   <div class="features">
-    <div class="card"><h3>🐝 Pure Source</h3><p>Directly from our own beehives</p></div>
-    <div class="card"><h3>🌿 100% Natural</h3><p>No heating, no chemicals</p></div>
-    <div class="card"><h3>💪 Health Benefits</h3><p>Boosts immunity & digestion</p></div>
-    <div class="card"><h3>🏡 Local Trust</h3><p>Trusted by local families</p></div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="container">
-  <h2 style="text-align:center">⭐ Customer Reviews</h2>
-  <div class="features">
-    <div class="card">“बहुत ही शुद्ध शहद, स्वाद शानदार।”<br><strong>★★★★★</strong></div>
-    <div class="card">“Immunity improve हुई है।”<br><strong>★★★★★</strong></div>
-    <div class="card">“Best local honey brand.”<br><strong>★★★★☆</strong></div>
+    <div class="card"><h3>🐝 Pure Source</h3><p>From our own beehives</p></div>
+    <div class="card"><h3>🌿 Natural</h3><p>No chemicals, no heating</p></div>
+    <div class="card"><h3>💪 Health</h3><p>Boosts immunity & digestion</p></div>
+    <div class="card"><h3>🏡 Local Trust</h3><p>Trusted by families</p></div>
   </div>
 </section>
 
@@ -137,11 +97,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <h3>🍯 DesiGold Honey</h3>
-  <p>Pure • Natural • Traditional</p>
-  <p>📍 Rae Bareli, Uttar Pradesh, India</p>
-  <p>📞 +91-8506919871</p>
-  <p>© 2025 DesiGold Honey. All Rights Reserved.</p>
+  <p>© 2025 DesiGold Honey | babhanpur chhatoh Rae Bareli, Uttar Pradesh | 📞 +91-8506919871</p>
 </footer>
 
 </body>
