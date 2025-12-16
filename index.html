@@ -5,41 +5,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DesiGold Honey</title>
 <style>
-  /* Reset & Base */
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: Arial, sans-serif; background: #fffaf0; color: #333; line-height: 1.6; }
-
-  a { text-decoration: none; color: inherit; }
+  body { font-family: 'Arial', sans-serif; background: #fffaf0; color: #333; }
 
   /* Header / Hero */
   header {
-    background: linear-gradient(to right, #f9c74f, #f4a261);
+    position: relative;
     text-align: center;
-    padding: 50px 20px;
-    color: #8B5A00;
+    color: white;
+    background: url('images/banner.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  header h1 { font-size: 36px; margin-bottom: 10px; }
-  header p { font-size: 18px; margin-bottom: 5px; }
+
+  /* Overlay */
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right:0; bottom:0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+  header .logo {
+    position: relative;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #8B5A00;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  header p {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    margin-top: 8px;
+  }
 
   .hero-btn {
-    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    padding: 12px 25px;
     background: #25D366;
     color: white;
-    padding: 15px 25px;
-    margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: bold;
+    text-decoration: none;
     transition: 0.3s;
   }
   .hero-btn:hover { background: #128C7E; }
 
-  /* Product Section */
+  /* Product Info */
   .product-info { text-align: center; padding: 30px 20px; }
   .product-info h2 { font-size: 28px; color: #8B5A00; margin-bottom: 10px; }
   .product-info p { margin-bottom: 10px; font-size: 16px; }
   .price { font-size: 26px; color: #e67e22; font-weight: bold; margin: 10px 0; }
-
-  /* WhatsApp Button */
   .whatsapp-btn {
     display: inline-block;
     background: #25D366;
@@ -69,7 +111,6 @@
   /* Footer */
   footer { background: #f4a261; text-align: center; padding: 15px; font-size: 14px; color: #8B5A00; }
 
-  /* Responsive */
   @media (max-width: 600px) {
     header h1 { font-size: 28px; }
     header p { font-size: 14px; }
@@ -81,55 +122,55 @@
 </head>
 <body>
 
-  <!-- Header / Hero -->
-  <header>
-    <h1>DesiGold Honey 🍯</h1>
-    <p>Pure Desi Honey • 100% Natural • Unprocessed</p>
-    <p>शुद्ध देसी शहद, सीधे पारंपरिक मधुमक्खी पालन से | बिना मिलावट • बिना प्रोसेसिंग</p>
-    <a href="#order" class="hero-btn">WhatsApp से Order करें</a>
-  </header>
+<!-- Header / Hero -->
+<header>
+  <div class="logo">DesiGold<br>Honey</div>
+  <h1>Pure Desi Honey 🍯</h1>
+  <p>100% Natural & Unprocessed</p>
+  <a href="#order" class="hero-btn">WhatsApp से Order करें</a>
+</header>
 
-  <!-- Product Info -->
-  <section class="product-info" id="order">
-    <h2>Shudh Desi Honey 🍯</h2>
-    <p>100% Pure, Natural & Unprocessed Honey</p>
-    <div class="price">₹499 (1 Kg)</div>
-    <a class="whatsapp-btn" href="https://wa.me/918506XXXXXX?text=Hello%20DesiGold%20Honey!%20I%20want%20to%20order%201kg%20honey." target="_blank">
-      💬 WhatsApp से Order करें
-    </a>
-  </section>
+<!-- Product Info -->
+<section class="product-info" id="order">
+  <h2>Shudh Desi Honey 🍯</h2>
+  <p>100% Pure, Natural & Unprocessed Honey</p>
+  <div class="price">₹499 (1 Kg)</div>
+  <a class="whatsapp-btn" href="https://wa.me/918506XXXXXX?text=Hello%20DesiGold%20Honey!%20I%20want%20to%20order%201kg%20honey." target="_blank">
+    💬 WhatsApp से Order करें
+  </a>
+</section>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>📸 हमारी मधुमक्खी पालन Gallery</h2>
-    <div class="photo-grid">
-      <img src="images/beekeeper1.jpg" alt="DesiGold Honey Beekeeping">
-      <img src="images/beekeeper2.jpg" alt="Honey Box Inspection">
-      <img src="images/frame.jpg" alt="Honey Frame with Bees">
-      <img src="images/honeybox.jpg" alt="Natural Beekeeping Process">
-    </div>
-  </section>
+<!-- Gallery -->
+<section class="gallery">
+  <h2>📸 हमारी मधुमक्खी पालन Gallery</h2>
+  <div class="photo-grid">
+    <img src="images/beekeeper1.jpg" alt="DesiGold Honey Beekeeping">
+    <img src="images/beekeeper2.jpg" alt="Honey Box Inspection">
+    <img src="images/frame.jpg" alt="Honey Frame with Bees">
+    <img src="images/honeybox.jpg" alt="Natural Beekeeping Process">
+  </div>
+</section>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="feature">🐝 Pure Source<br>From our own beehives</div>
-    <div class="feature">🌿 Natural<br>No chemicals, no heating</div>
-    <div class="feature">💪 Health<br>Boosts immunity & digestion</div>
-    <div class="feature">🏡 Local Trust<br>Trusted by families</div>
-  </section>
+<!-- Features -->
+<section class="features">
+  <div class="feature">🐝 Pure Source<br>From our own beehives</div>
+  <div class="feature">🌿 Natural<br>No chemicals, no heating</div>
+  <div class="feature">💪 Health<br>Boosts immunity & digestion</div>
+  <div class="feature">🏡 Local Trust<br>Trusted by families</div>
+</section>
 
-  <!-- Contact -->
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>📍 Location: Babhanpur Chhatoh, Rae Bareli, Uttar Pradesh</p>
-    <p>📞 Call: +91-8506XXXXXX</p>
-    <p>💬 WhatsApp: <a href="https://wa.me/918506XXXXXX" target="_blank" style="color:#128C7E;font-weight:bold;">Click to Chat</a></p>
-  </section>
+<!-- Contact -->
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>📍 Location: Babhanpur Chhatoh, Rae Bareli, Uttar Pradesh</p>
+  <p>📞 Call: +91-8506XXXXXX</p>
+  <p>💬 WhatsApp: <a href="https://wa.me/918506XXXXXX" target="_blank" style="color:#128C7E;font-weight:bold;">Click to Chat</a></p>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 DesiGold Honey | Made with ❤️ for Pure Honey Lovers
-  </footer>
+<!-- Footer -->
+<footer>
+  © 2025 DesiGold Honey | Made with ❤️ for Pure Honey Lovers
+</footer>
 
 </body>
 </html>
