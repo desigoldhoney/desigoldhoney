@@ -103,6 +103,29 @@
   <h2 style="text-align:center">📍 Our Location</h2>
   <iframe src="https://www.google.com/maps?q=Rae%20Bareli%20Uttar%20Pradesh%20India&output=embed" width="100%" height="300" style="border:0;border-radius:16px"></iframe>
 </section>
+/* GALLERY */
+.photo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.photo-grid img{
+  width:100%;
+  height:220px;          /* 👉 image size control */
+  object-fit:cover;      /* 👉 image crop properly */
+  border-radius:16px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  border:2px solid #e3a23b;
+}
+
+/* Mobile fix */
+@media(max-width:600px){
+  .photo-grid img{
+    height:180px;
+  }
+}
 
 <!-- FOOTER -->
 <footer>
