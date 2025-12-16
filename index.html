@@ -1,136 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DesiGold Honey | Pure Desi Honey from Beekeeping</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DesiGold Honey</title>
+<style>
+  /* Reset & Base */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; background: #fffaf0; color: #333; line-height: 1.6; }
 
-  <!-- SEO -->
-  <meta name="description" content="DesiGold Honey – 100% pure, natural & unprocessed desi honey. Direct from traditional beekeeping. Trusted local honey brand from India." />
-  <meta name="keywords" content="pure desi honey, raw honey india, unprocessed honey, desigold honey, local honey rae bareli" />
+  a { text-decoration: none; color: inherit; }
 
-  <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#faf6ef;color:#3b2a1a;line-height:1.6}
-    a{text-decoration:none}
+  /* Header / Hero */
+  header {
+    background: linear-gradient(to right, #f9c74f, #f4a261);
+    text-align: center;
+    padding: 50px 20px;
+    color: #8B5A00;
+  }
+  header h1 { font-size: 36px; margin-bottom: 10px; }
+  header p { font-size: 18px; margin-bottom: 5px; }
 
-    /* HERO HEADER */
-    .hero-header{position:relative;min-height:85vh;background:linear-gradient(135deg,#f6c56b,#e3a23b);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-    .hero-overlay{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.25) 1px,transparent 1px);background-size:25px 25px;opacity:.4}
-    .hero-content{position:relative;max-width:900px;padding:20px}
-    .logo-badge{width:90px;height:90px;margin:auto;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:42px;box-shadow:0 10px 25px rgba(0,0,0,.2);margin-bottom:20px}
-    .hero-header h1{font-size:48px;margin:0;font-weight:800}
-    .tagline{font-size:20px;margin-top:12px;font-weight:600}
-    .sub-text{font-size:17px;margin-top:15px;line-height:1.6}
-    .hero-buttons{margin-top:30px}
-    .btn-primary,.btn-whatsapp{display:inline-block;color:#fff;padding:14px 30px;border-radius:30px;font-weight:bold;margin:5px}
-    .btn-primary{background:#3b2a1a}
-    .btn-whatsapp{background:#25D366}
+  .hero-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .hero-btn:hover { background: #128C7E; }
 
-    /* LAYOUT */
-    .container{max-width:1100px;margin:auto;padding:40px 20px}
-    .product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-    .price{font-size:28px;font-weight:bold}
-    select{padding:10px 15px;border-radius:8px}
+  /* Product Section */
+  .product-info { text-align: center; padding: 30px 20px; }
+  .product-info h2 { font-size: 28px; color: #8B5A00; margin-bottom: 10px; }
+  .product-info p { margin-bottom: 10px; font-size: 16px; }
+  .price { font-size: 26px; color: #e67e22; font-weight: bold; margin: 10px 0; }
 
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
-    .card{background:#fff;padding:25px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center}
-    .card h3{color:#e2a23a}
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .whatsapp-btn:hover { background: #128C7E; }
 
-    footer{background:#3b2a1a;color:#fff;text-align:center;padding:30px;margin-top:60px}
+  /* Gallery */
+  .gallery { padding: 40px 15px; text-align: center; }
+  .gallery h2 { font-size: 26px; color: #8B5A00; margin-bottom: 25px; }
+  .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 1000px; margin: auto; }
+  .photo-grid img { width: 100%; border-radius: 10px; border: 2px solid #f1c40f; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 
-    @media(max-width:768px){
-      .hero-header h1{font-size:34px}
-      .product{grid-template-columns:1fr}
-    }
-  </style>
+  /* Features */
+  .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; text-align: center; }
+  .feature { background: #fff3d6; padding: 15px; border-radius: 10px; width: 180px; font-size: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+  /* Contact */
+  .contact-section { background: #f9c74f; padding: 30px 20px; text-align: center; color: #8B5A00; }
+  .contact-section h2 { font-size: 26px; margin-bottom: 15px; }
+  .contact-section p { margin: 5px 0; font-size: 16px; }
+
+  /* Footer */
+  footer { background: #f4a261; text-align: center; padding: 15px; font-size: 14px; color: #8B5A00; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 { font-size: 28px; }
+    header p { font-size: 14px; }
+    .product-info h2 { font-size: 22px; }
+    .gallery h2 { font-size: 22px; }
+    .feature { width: 45%; font-size: 14px; }
+  }
+</style>
 </head>
 <body>
 
-<!-- HERO HEADER -->
-<header class="hero-header">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="logo-badge">🍯</div>
-    <h1>DesiGold Honey</h1>
-    <p class="tagline">Pure Desi Honey • 100% Natural • Unprocessed</p>
-    <p class="sub-text">शुद्ध देसी शहद, सीधे पारंपरिक मधुमक्खी पालन से<br>बिना मिलावट • बिना प्रोसेसिंग</p>
-    <div class="hero-buttons">
-      <a href="tel:+918506919871" class="btn-primary">📞 Call to Order</a>
-      <a href="https://wa.me/918506919871?text=Hello%20I%20want%20to%20order%20DesiGold%20Honey" class="btn-whatsapp">💬 WhatsApp Order</a>
+  <!-- Header / Hero -->
+  <header>
+    <h1>DesiGold Honey 🍯</h1>
+    <p>Pure Desi Honey • 100% Natural • Unprocessed</p>
+    <p>शुद्ध देसी शहद, सीधे पारंपरिक मधुमक्खी पालन से | बिना मिलावट • बिना प्रोसेसिंग</p>
+    <a href="#order" class="hero-btn">WhatsApp से Order करें</a>
+  </header>
+
+  <!-- Product Info -->
+  <section class="product-info" id="order">
+    <h2>Shudh Desi Honey 🍯</h2>
+    <p>100% Pure, Natural & Unprocessed Honey</p>
+    <div class="price">₹499 (1 Kg)</div>
+    <a class="whatsapp-btn" href="https://wa.me/918506XXXXXX?text=Hello%20DesiGold%20Honey!%20I%20want%20to%20order%201kg%20honey." target="_blank">
+      💬 WhatsApp से Order करें
+    </a>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>📸 हमारी मधुमक्खी पालन Gallery</h2>
+    <div class="photo-grid">
+      <img src="images/beekeeper1.jpg" alt="DesiGold Honey Beekeeping">
+      <img src="images/beekeeper2.jpg" alt="Honey Box Inspection">
+      <img src="images/frame.jpg" alt="Honey Frame with Bees">
+      <img src="images/honeybox.jpg" alt="Natural Beekeeping Process">
     </div>
-  </div>
-</header>
+  </section>
 
-<!-- PRODUCT -->
-<section class="container">
-  <div class="product">
-    <img src="https://images.unsplash.com/photo-1587049352847-6f3f8f8c6f5a?auto=format&fit=crop&w=800&q=80" alt="DesiGold Honey" style="width:100%;border-radius:18px">
-    <div>
-      <h2>Shudh Desi Honey 🍯</h2>
-      <p>100% Pure, Natural & Unprocessed Honey</p>
-      <p class="price">₹499 <span style="font-size:16px;color:#777">(1 Kg)</span></p>
-      <select>
-        <option>1000gm – ₹499</option>
-        <option>500gm – ₹320</option>
-        <option>250gm – ₹170</option>
-        <option>100gm – ₹99</option>
-      </select>
-    </div>
-  </div>
-</section>
-<section class="container">
-  <h2 style="text-align:center;color:#8B5A00">📸 हमारी मधुमक्खी पालन Gallery</h2>
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">🐝 Pure Source<br>From our own beehives</div>
+    <div class="feature">🌿 Natural<br>No chemicals, no heating</div>
+    <div class="feature">💪 Health<br>Boosts immunity & digestion</div>
+    <div class="feature">🏡 Local Trust<br>Trusted by families</div>
+  </section>
 
-  <div class="photo-grid">
-    <img src="images/beekeeper1.jpg">
-    <img src="images/beekeeper2.jpg">
-    <img src="images/beekeeper3.jpg">
-  </div>
-</section>
+  <!-- Contact -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Babhanpur Chhatoh, Rae Bareli, Uttar Pradesh</p>
+    <p>📞 Call: +91-8506XXXXXX</p>
+    <p>💬 WhatsApp: <a href="https://wa.me/918506XXXXXX" target="_blank" style="color:#128C7E;font-weight:bold;">Click to Chat</a></p>
+  </section>
 
-<!-- FEATURES -->
-<section class="container">
-  <div class="features">
-    <div class="card"><h3>🐝 Pure Source</h3><p>From our own beehives</p></div>
-    <div class="card"><h3>🌿 Natural</h3><p>No chemicals, no heating</p></div>
-    <div class="card"><h3>💪 Health</h3><p>Boosts immunity & digestion</p></div>
-    <div class="card"><h3>🏡 Local Trust</h3><p>Trusted by families</p></div>
-  </div>
-</section>
-
-<!-- MAP -->
-<section class="container">
-  <h2 style="text-align:center">📍 Our Location</h2>
-  <iframe src="https://www.google.com/maps?q=Rae%20Bareli%20Uttar%20Pradesh%20India&output=embed" width="100%" height="300" style="border:0;border-radius:16px"></iframe>
-</section>
-/* GALLERY */
-.photo-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  margin-top:25px;
-}
-
-.photo-grid img{
-  width:100%;
-  height:220px;          /* 👉 image size control */
-  object-fit:cover;      /* 👉 image crop properly */
-  border-radius:16px;
-  box-shadow:0 6px 15px rgba(0,0,0,.15);
-  border:2px solid #e3a23b;
-}
-
-/* Mobile fix */
-@media(max-width:600px){
-  .photo-grid img{
-    height:180px;
-  }
-}
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 DesiGold Honey | babhanpur chhatoh Rae Bareli, Uttar Pradesh | 📞 +91-8506919871</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    © 2025 DesiGold Honey | Made with ❤️ for Pure Honey Lovers
+  </footer>
 
 </body>
 </html>
